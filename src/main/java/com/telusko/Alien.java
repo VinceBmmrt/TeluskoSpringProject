@@ -1,5 +1,7 @@
 package com.telusko;
 
+import java.beans.ConstructorProperties;
+
 public class Alien {
     private int age;
     private Laptop lap = new Laptop();
@@ -7,6 +9,12 @@ public class Alien {
 
     public Alien() {
         System.out.println("Object created");
+    }
+
+    @ConstructorProperties({"age", "lap"})
+    public Alien(Laptop lap, int age) {
+        this.lap = lap;
+        this.age = age;
     }
 
     public int getAge() {
