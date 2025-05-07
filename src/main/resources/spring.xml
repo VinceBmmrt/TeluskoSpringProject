@@ -5,24 +5,25 @@
 
     <!-- bean definitions here -->
     <!--    <bean id="alien" class="com.telusko.Alien" scope="prototype">-->
-    <bean id="alien" class="com.telusko.Alien">
-
+    <bean id="alien" class="com.telusko.Alien" autowire="byName">
+        <property name="age" value="21"/>
+        <!--        <property name="com" ref="com"/>-->
         <!--        <constructor-arg type="int" value="21"/>-->
         <!--        <constructor-arg type="com.telusko.Laptop" ref="lap1"/>-->
 
         <!--        <constructor-arg name="age" value="21"/>-->
         <!--        <constructor-arg index="lap" ref="lap1"/>-->
 
-        <constructor-arg index="0" value="21"/>
-        <constructor-arg index="1" ref="lap1"/>
+        <!--        <constructor-arg index="0" value="21"/>-->
+        <!--        <constructor-arg index="1" ref="lap1"/>-->
 
-
-        <!--        <property name="lap" ref="lap1"/>-->
 
     </bean>
 
 
-    <bean id="lap1" class="com.telusko.Laptop">
+    <bean id="com1" class="com.telusko.Laptop">
+    </bean>
+    <bean id="com" class="com.telusko.Desktop">
     </bean>
 </beans>
 
