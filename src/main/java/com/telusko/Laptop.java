@@ -1,7 +1,11 @@
 package com.telusko;
 
 public class Laptop {
-    public Laptop(){
+    public Laptop() {
         System.out.println("Laptop Object created");
+    }
+
+    public void compile() {
+        System.out.println("compiling ...");
     }
 }
