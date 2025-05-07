@@ -23,7 +23,7 @@
 
     <bean id="com1" class="com.telusko.Laptop">
     </bean>
-    <bean id="com" class="com.telusko.Desktop">
+    <bean id="com" class="com.telusko.Desktop" lazy-init="true">
     </bean>
 </beans>
 
