@@ -1,13 +1,24 @@
 package com.telusko;
 
 public class Alien {
-int age;
-    public Alien(){
+    private int age;
+
+    public Alien() {
         System.out.println("Object created");
     }
-public void code(){
 
-    System.out.println("Coding..");
-}
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        System.out.println("Setter called");
+        this.age = age;
+    }
+
+    public void code() {
+
+        System.out.println("Coding..");
+    }
 
 }
