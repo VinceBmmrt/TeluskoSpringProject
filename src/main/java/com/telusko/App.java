@@ -11,8 +11,11 @@ public class App {
     public static void main(String[] args) {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        Desktop dt = context.getBean(Desktop.class);
 
+        Desktop dt = context.getBean(Desktop.class);
+        dt.compile();
+
+        Desktop dt1 = context.getBean(Desktop.class);
         dt.compile();
 
 
