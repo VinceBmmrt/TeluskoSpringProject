@@ -12,11 +12,16 @@ public class App {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
-        Desktop dt = context.getBean(Desktop.class);
-        dt.compile();
+        Alien obj = context.getBean(Alien.class);
+        System.out.println(obj.getAge());
+        obj.code();
 
-        Desktop dt1 = context.getBean(Desktop.class);
-        dt.compile();
+
+//        Desktop dt = context.getBean(Desktop.class);
+//        dt.compile();
+//
+//        Desktop dt1 = context.getBean(Desktop.class);
+//        dt.compile();
 
 
 //        ** XML CONFIG **
